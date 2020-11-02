@@ -1,5 +1,4 @@
 .container {
-  min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
@@ -8,21 +7,29 @@
 }
 
 .main {
-  padding: 5rem 0;
-  flex: 1;
+  padding: 5rem 1rem;
   display: flex;
+  flex: 1;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #eaeaea;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: 60px;
   border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .footer img {
@@ -33,6 +40,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItem {
+  margin: 0 10px;
 }
 
 .title a {
@@ -49,17 +64,18 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 2rem;
 }
 
 .title,
-.description {
+.titleSecondary {
   text-align: center;
 }
 
 .description {
   line-height: 1.5;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  width: 100%;
 }
 
 .code {
